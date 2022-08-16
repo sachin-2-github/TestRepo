@@ -18,10 +18,10 @@ export class CdkS3DemoStack extends Stack {
     autoDeleteObjects:true,
 
     });
-   const b2 = new s3.Bucket(this, "CDK-s3-b2", {
+   new s3.Bucket(this, "CDK-s3-b2", {
     bucketName:"cdk-s3-bucket-b2-sk"
    });
-   const b3= new s3.Bucket(this, "CDK-s3-b3", {
+   new s3.Bucket(this, "CDK-s3-b3", {
     bucketName:"cdk-s3-bucket-b3-sk"
    });
 
