@@ -23,5 +23,5 @@ phases:
       - echo "Hello world this code buils project"
       - echo "S3 bucket name is --> $S3_BUCKET -This from buildepec secion"
       - echo "AWS default Region --> $AWS_DEFAULT_REGION -This is from CodeBuild EV section"
-      - echo "these values are from scret manger's --> DB_USER & $DB_PASSWORD"
+      - echo "these values are from scret manger's --> $DB_USER & $DB_PASSWORD"
       
