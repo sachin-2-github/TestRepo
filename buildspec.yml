@@ -3,6 +3,9 @@ version: 0.2
 env:
   variables:
     S3_BUCKET: "codebuild-ap-south-1-644480493008-input-bucket"
+  secrets-manager:
+    DB_PASSWORD: "codebuild_secret:password"
+    DB_USER: "codebuild_secret:username"
 
 phases:
   install:
@@ -18,6 +21,7 @@ phases:
   post_build:
     commands:
       - echo "Hello world this code buils project"
-      - echo "S3 bucket name is $S3_BUCKET -->This from buildepec secion"
-      - echo  "AWS default Region  $AWS_DEFAULT_REGION -->This is from CodeBuild EV section"
+      - echo "S3 bucket name is --> $S3_BUCKET -This from buildepec secion"
+      - echo "AWS default Region --> $AWS_DEFAULT_REGION -This is from CodeBuild EV section"
+      - echo "these values are from scret manger's --> DB_USER & $DB_PASSWORD"
       
