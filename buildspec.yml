@@ -18,5 +18,6 @@ phases:
   post_build:
     commands:
       - echo "Hello world this code buils project"
-      - echo 'S3 bucket name is $S3_BUCKET" 
+      - echo "S3 bucket name is $S3_BUCKET -->This from buildepec secion"
+      - eco  "AWS default Region  $AWS_DEFAULT_REGION -->This is from CodeBuild EV section"
       
