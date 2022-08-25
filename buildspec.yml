@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  variables:
+    S3_BUCKET: "codebuild-ap-south-1-644480493008-input-bucket"
+
 phases:
   install:
     runtime-versions:
@@ -14,4 +18,5 @@ phases:
   post_build:
     commands:
       - echo "Hello world this code buils project"
+      - echo 'S3 bucket name is $S3_BUCKET" 
       
