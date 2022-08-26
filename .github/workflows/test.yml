@@ -1,8 +1,7 @@
 name: Network
 
 on: [push]
-
-    inputs:
+inputs:
       ENV:
         type: string
         required: true
