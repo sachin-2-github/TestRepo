@@ -1,6 +1,9 @@
 name: Network
 
-on: [push]
+on:
+ push:
+  branches:
+   -master
 inputs:
       ENV:
         type: string
