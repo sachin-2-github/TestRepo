@@ -1,4 +1,4 @@
-ame: Network
+name: Network
 
 on:
   workflow_call:
