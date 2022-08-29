@@ -6,7 +6,7 @@ on:
    -master
 
 env:
-  ENV: ${{ inputs.ENV }}
+  #ENV: ${{ inputs.ENV }}
   CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
   CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
   AWS_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
