@@ -7,7 +7,7 @@
 
 Edit
 
-<h2>**Getting started with AWS CodeBuild using the buildspec file.**</h2>
+<h1>Getting started with AWS CodeBuild using the buildspec file.</h1>
 
 
 **Steps:**
@@ -110,11 +110,15 @@ For creating Build Project follow the screenshots below.
       13.1 Build Specfications select ‘Use a buildspec file
 
       13.2 Buildspec Name: buildspec/buildspec.yml   
+
+      
 ![alt_text](images/buildspec.png "image_tooltip")
 
 
 
 14. At the very  bottom Click on Create build Project button 
+    
+
 ![alt_text](images/build-project-button.png "image_tooltip")
 
 
