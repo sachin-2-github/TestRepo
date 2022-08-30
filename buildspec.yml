@@ -6,6 +6,7 @@ env:
   secrets-manager:
     DB_PASSWORD: "codebuild_secret:password"
     DB_USER: "codebuild_secret:username"
+    AWS_REGION
 
 phases:
   install:
